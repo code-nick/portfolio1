@@ -1,0 +1,332 @@
+@import 'Utilities.css  ';
+
+
+:root{
+    --primary: #3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+    --secondry:#070606;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialiased;
+}
+body{
+    /* height: 8000px; */
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background: var(--dark);
+    clip-path: polygon(0 0,100% 0,100% 100%, 70% 87% , 0 100%);
+}
+.container{
+    max-width: 1100px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+header nav .left a:hover{
+    color: var(--primary);
+
+}
+header nav{
+    padding: 2rem ;
+}
+header nav .branding{
+    margin-right:3rem;
+}
+.hero .left img{
+    width: 400px;
+
+}
+.hero .right{
+    color: var(--pure);
+}
+.hero .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+.hero .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+.hero .right span{
+    color: var(--primary);
+}
+.hero .right p{
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+.hero .right{
+    margin-top: -7rem;
+}
+section{
+    padding: 6rem 0;
+    
+
+}
+section.about .about-me-img{
+    height: 400px;
+}
+section.about h1{
+    margin-top: 2rem;
+    font-size: 2.6rem;
+    font-weight: 400;
+    
+}
+section.about h1 span{
+    color:var(--primary);
+}
+section.about h3{
+    font-size: 1rem ;
+    margin-bottom: 2rem;
+    font-weight: 400;
+
+}
+section.about p{
+    color: rgb(120, 118, 118);
+    line-height: 1rem;
+    margin-bottom: 2rem;
+
+}
+section.about .social{
+    display: flex;
+}
+section.about .social a {
+    text-decoration: none;
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    font-size: 40px;
+    border-radius: 50%;
+    padding: 30px;
+  
+}
+.section-heading{
+    color: var(--secondry);
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 0.5;
+    font-size: 40px;
+}
+.section-heading span{
+    color: var(--primary);
+
+}
+.section-heading + P{
+    color: var(--ternary);
+    font-family: 'loto', sans-serif;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.container-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background: var(--light);
+
+    gap: 1rem;
+}
+.card-warpper{
+    border: 1px solid rgb(247, 240, 240);
+    padding: 40px;
+    margin:  20px;
+    max-width: 350px;
+    position: relative;
+    border: 1px solid white;
+    background: var(--pure);
+}
+.card-warpper img {
+    position: absolute;
+    height: 60px;
+    top: -35px;
+    left: 40%;
+    border: 2px solid;
+    background: var(--primary);
+    padding: 10px;
+}
+.card-warpper h2{
+    text-align: center;
+    
+}
+.card-warpper p{
+    color: rgb(120, 118, 118);
+    text-align: center;
+    margin: 20px;
+
+}
+section.freelancer{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7) ,rgba(0,0,0,0.7)),url(../images/camera.png);
+    color: var(--pure);
+    clip-path: polygon(0 0,100% 0,100% 100%, 67% 80% , 0 100%);
+    margin-bottom: 15rem;
+
+}
+section.freelancer h1{
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+
+}
+section.freelancer p{
+    margin-bottom: 2rem;
+}
+.slide img{
+    align-items: center;
+}
+.card-warpper-2{
+    border: 1px solid rgb(247, 240, 240);
+    padding: 50px;
+    margin:  25px;
+    max-width: 350px;
+    position: relative;
+    border: 1px solid white;
+    background: var(--pure);
+    color: var(--primary);
+}
+.review{
+    margin-top: -250px;
+    text-align: center;
+
+}
+.text p{
+    margin: 18rem;
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(120, 118, 118);
+    line-height: 1rem;
+    margin-bottom: 2rem
+}
+section.work{
+    background: var(--light);
+}
+section.work .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}  
+section.work .card-wrapper .card{
+    position: relative;
+    height: 250px;
+
+}
+section.work .card-wrapper .card .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(61, 207, 211 ,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--ternary);
+    opacity: 0;
+    transition: all .6s ease;
+
+}
+section.work .card-wrapper .card:hover .overlay{
+    opacity:1;
+}
+
+section.work .card-wrapper .card .overlay a{
+    color: var(--secondry);
+    text-decoration: none;
+}
+section.work .card-wrapper .card img{
+    height: 100%;
+    width: 100%;
+
+}
+section.blog{
+    background: var(--dark);
+    clip-path: polygon(0 0,100% 0,100% 100%, 67% 90% , 0 100%);
+    padding-bottom: 12rem;
+
+}
+section.blog .section-heading{
+    color: var(--pure);
+}
+section.blog .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+section.blog .card-wrapper .card{
+    background: var(--pure);
+}
+section.blog .card-wrapper .card .img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section.blog .card-wrapper .card .card-content{
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+section.blog .card-wrapper .card .card-content h1{
+    font-size: 1rem;
+    font-weight: 600;
+}
+section.blog .card-wrapper .card .card-content a{
+    color: var(--secondry);
+    text-decoration: none;
+}
+section.blog .card-wrapper .card .card-content a:hover{
+    color: var(--primary);
+}
+section.blog .card-wrapper .card .card-content span{
+    color: var(--ternary);
+    font-size: 0.8rem;
+
+}
+section.blog .card-wrapper .card .card-content p{
+    font-family: 'Lato',sans-serif;
+    color: var(--ternary);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+section.blog .card-wrapper .card .card-content a.read-more{
+    font-size: 1rem;
+}
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+section.contact .card-wrapper .card{
+    text-align: center;
+}
+section.contact .card-wrapper .card img{
+   margin-bottom: 3rem;
+}
+section.contact .card-wrapper .card h1{
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+section.contact .card-wrapper .card h6{
+    font-size: 1rem;
+    color: var(--ternary);
+}
