@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: aqua;
+}
+.wrapper{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.wrapper .logo{
+    height: 5rem;
+    width: 5rem;
+    margin: auto 95px;
+    margin-top: 45px;
+}
+.wrapper-2{
+    background-color: #fff;
+    height: 22rem;
+    width: 15rem;
+    margin: 20px ;
+    border-radius: 8px;
+}
+.wrapper-2::after{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 100%;
+    left: 49%;
+    content: "";
+    transform: rotate(45deg);
+    margin-top: -385px;
+    background-color: #fff;
+
+}
+.text-h3{
+    margin: 8px;
+}
+.text-p{
+    margin-top: -10px;
+    margin-left: 8px;
+}
+span{
+    font-size: 13px;
+    color: dimgray;
+    padding: 10px;
+}
+.Accounting{
+    margin: 20px;
+}
+.Accounting a{
+    color: black;
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+.pages{
+    margin: 20px;
+}
+.pages a{
+    color: black;
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.business{
+    margin: 20px;
+}
+.business a{
+    color: black;
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.sign{
+    margin: 20px;
+}
+.sign a{
+    color: black;
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
