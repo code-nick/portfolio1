@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./image/mathew-macquarrie-u6OnpbMuZAs-unsplash.jpg);
+    background-size: cover;
+    background-size: cover;
+    background-position: center center;
+     height: 100vh; 
+}
+.banner-area{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,50%);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 4.5rem;
+}
