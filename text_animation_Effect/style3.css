@@ -1,0 +1,35 @@
+.banner-area{
+    background-image: url(./image/caroline-hernandez-s7cX3UfuFAA-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 95vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-area h2{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    font-size: 100px;
+    color: white;
+    text-transform: uppercase;
+    -webkit-text-stroke:5px #dc0e49;
+}
+.banner-area h2::before{
+    color: #dc0e49;
+    white-space: nowrap;
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+.banner-area h2:hover::before{
+    width: 100%;
+}

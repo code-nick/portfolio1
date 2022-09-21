@@ -1,0 +1,61 @@
+body{
+    background-image: url(./image/banner9.jpg);
+    background-size: cover;
+    background-position: center ;
+    height: 90vh; 
+
+}
+.warapper{
+    position: absolute;  
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+.warapper p{
+    font-size: 35px ;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    margin: 15px 0;
+}
+.text-animation span{
+    color: #262626;
+    opacity: 0;
+    transform: translate(0,100px)rotate(360deg) scale(0);
+    animation: animate 5s forwards;
+    display: inline-block;
+    font-size: 40px;
+}
+.text-animation span:nth-of-type(2){
+    animation-delay: .1s;
+}
+.text-animation span:nth-of-type(3){
+    animation-delay: .1s;
+}
+.text-animation span:nth-of-type(4){
+    animation-delay: .1s;
+}
+.text-animation span:nth-of-type(5){
+    animation-delay: .1s;
+}
+.text-animation span:nth-of-type(6){
+    animation-delay: .1s;
+}
+.text-animation span:nth-of-type(7){
+    animation-delay: .1s;
+}
+.text-animation span:nth-of-type(8){
+    animation-delay: .1s;
+}
+@keyframes animate{
+    30%{
+        transform: translate(0, -50px)rotate(180deg) scale(1);
+    }
+    60%{
+        transform: translate(0, 20px)rotate(180deg) scale(.8);
+    }
+    100%{
+        transform: translate(0)rotate(0deg) scale(1);
+        opacity: 1;
+    }
+}
+

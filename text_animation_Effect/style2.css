@@ -1,0 +1,72 @@
+body{
+    background-image: url(./image/girl.png);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+.wrapper p{
+    font-size: 60px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    margin: 15px 0;
+}
+.text-area{
+    font-size: 70px;
+    font-family:sans-serif ;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: -5px;
+}
+.text-area span{
+    color: #262626;
+    opacity: 0;
+    transform: translate(-300px,0) scale(0);
+    animation: animate 3s forwards;
+    display: inline-block;
+}
+.text-area span:nth-of-type(2){
+    animation-delay: .1s;
+}
+.text-area span:nth-of-type(3){
+    animation-delay: .2s;
+}
+.text-area span:nth-of-type(4){
+    animation-delay: .3s;
+}
+.text-area span:nth-of-type(5){
+    animation-delay: .4s;
+}
+.text-area span:nth-of-type(6){
+    animation-delay: 5s;
+}
+.text-area span:nth-of-type(7){
+    animation-delay: .6s;
+}
+.text-area span:nth-of-type(8){
+    animation-delay: .7s;
+}
+@keyframes animate{
+    60%{
+        transform: translate(20px , 0) scale(1);
+        color: #262626;
+    }
+    80%{
+        transform: translate(20px , 0) scale(1);
+        color: #262626;
+    }
+    99%{
+        transform: translate(0)scale(1.2);
+        color:#2a8c54;
+    }
+    100%{
+        transform: translate(0)scale(1);
+        color: #262626;
+        opacity: 1;
+    }
+}
